@@ -1,0 +1,122 @@
+body {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.main-panel {
+  background-image: url("../images/bg-desktop.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: hsl(229, 57%, 11%);
+  min-width: 100vh;
+  min-height: 95vh;
+}
+
+.holding-cell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 42.5%;
+  width: 850px;
+  left: 20%
+}
+
+.logo-panel {
+  grid-column-start: 1;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px 100px 10px 10px;
+  width: 200px;
+  height: 80px;
+  padding: 35px;
+}
+
+.logo {
+  height: 25px;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  height: 32.5px;
+  width: 32.5px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+}
+
+.data-panel {
+  grid-column-start: 2;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  width: 500px;
+  height: 60px;
+  padding: 30px;
+  position: relative;
+  top: 30px;
+}
+
+.gauge-bg {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 14px;
+  width: 500px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.gauge-img {
+  height: 10px;
+  width: 410px;
+  background: rgb(237,167,68);
+  background: linear-gradient(90deg, rgba(237,167,68,1) 0%, rgba(255,0,86,1) 100%);
+  border-radius: 10px;
+  position: relative;
+  bottom: 12px;
+}
+
+.rhs {
+  text-align: right;
+}
+
+.enhanced {
+  font-weight: 700;
+}
+
+.gauge-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.callout {
+  width: 150px;
+  height: 75px;
+  background-color: hsl(243, 100%, 93%);
+  color: hsl(229, 57%, 11%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 71% 76%, 0% 75%);
+  text-align: center;
+  position: relative;
+  top: -180%;
+  left: 140%;
+  line-height: 2.25;
+}
+
+.big-enhanced {
+  font-size: 24px;
+}
